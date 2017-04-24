@@ -54,6 +54,9 @@ body {
     background-image: url('../img/spritesheet.png');
     background-repeat: no-repeat;
     margin: 0;
+
+    width: 60px;
+    height: 60px;
     
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -68,32 +71,22 @@ body {
 }
 
 .btn-align-center {
-    width: 60px;
-    height: 60px;
     background-position: -9px -4px;
 }
 
 .btn-align-justify {
-    width: 60px;
-    height: 60px;
     background-position: -84px -4px;
 }
 
 .btn-align-left {
-    width: 60px;
-    height: 60px;
     background-position: -9px -69px;
 }
 
 .btn-align-right {
-    width: 60px;
-    height: 60px;
     background-position: -84px -69px;
 }
 
 .btn-bold {
-    width: 60px;
-    height: 60px;
     background-position: -146px -4px;
 }
 
@@ -105,32 +98,22 @@ body {
 }
 
 .btn-font-color {
-    width: 60px;
-    height: 60px;
     background-position: -9px -138px;
 }
 
 .btn-italic {
-    width: 60px;
-    height: 60px;
     background-position: -150px -107px;
 }
 
 .btn-save {
-    width: 60px;
-    height: 60px;
     background-position: -205px -0px;
 }
 
 .btn-font-size {
-    width: 60px;
-    height: 60px;
     background-position: -210px -60px;
 }
 
 .btn-underline {
-    width: 60px;
-    height: 60px;
     background-position: -208px -126px;
 }
 
