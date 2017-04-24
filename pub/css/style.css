@@ -43,7 +43,6 @@ body {
     right: 6px;
     top: 10px;
 }
-
 .textbox {
     position: relative;
     height: 528px;
@@ -51,16 +50,21 @@ body {
     font-size: 18px;
     padding: 50px 49px 10px 30px;
 }
-
-
-/*.btn-align {
-    
-}*/
-
 .btn {
     background-image: url('../img/spritesheet.png');
     background-repeat: no-repeat;
     margin: 0;
+    
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+    outline: none;
+
+    text-decoration: none;
 }
 
 .btn-align-center {
