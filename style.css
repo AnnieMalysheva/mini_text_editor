@@ -1,0 +1,51 @@
+body {
+    padding: 100px;
+}
+
+.wrapper {
+    width: 862px;
+}
+
+.tools {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btnSize {
+    margin-right: 23px;
+}
+
+.btnAlign {
+    margin-right: 29px;
+}
+
+.btnBold, .btnItalic {
+    margin-right: 9px;
+}
+
+.btnColor {
+    margin-left: 30px;
+}
+
+.btnSave {
+    position: absolute;
+    right: 0;
+}
+
+.btnEdit {
+    position: absolute;
+    right: 6px;
+    top: 10px;
+}
+
+.textBox {
+    position: relative;
+    height: 528px;
+    border: 1px solid #d6d5d5;
+    font-size: 18px;
+    padding: 50px 49px 10px 30px;
+}

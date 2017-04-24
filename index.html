@@ -3,24 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Mini Text Editor!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <div class="tools">
-            <div class="btnSize"></div>
-            <div class="btnAlign"></div>
-            <div class="btnColor"></div>
-            <div class="btnSave"></div>
+            <div class="btnSize">
+                <input type="image" src="./img/textSize.png" alt="Размер шрифта">
+            </div>
+            <div class="btnAlign">
+                <input type="image" src="./img/alignLeft.png" alt="По левому краю">
+                <input type="image" src="./img/alignCenter.png" alt="По центру">
+                <input type="image" src="./img/alignRight.png" alt="По правому краю">
+                <input type="image" src="./img/alignJustify.png" alt="По ширине">
+            </div>
+            <div class="btnBold">
+                <input type="image" src="./img/bold.png">
+            </div>
+            <div class="btnItalic">
+                <input type="image" src="./img/italic.png">
+            </div>
+            <div class="btnUnderline">
+                <input type="image" src="./img/underline.png">
+            </div>
+            <div class="btnColor">
+                <input type="image" src="./img/fontColor.png">
+            </div>
+            <div class="btnSave">
+                <input type="image" src="./img/save.png">
+            </div>
         </div>
-        <div>
-            <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cumque delectus dolor doloribus enim explicabo inventore magni nisi officiis reprehenderit sequi totam, velit, voluptas. Aspernatur beatae facere quisquam quos sit?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, assumenda, dicta error esse ex magni maxime minima natus neque nostrum pariatur rem repudiandae, similique sit tenetur unde ut vel voluptate.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci architecto assumenda blanditiis debitis dolor esse ex explicabo, facere molestiae nam omnis, sapiente similique sit vero. Excepturi facere quo recusandae.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quibusdam, voluptates! Ab beatae, cum deserunt distinctio doloribus enim fugit id impedit obcaecati optio quae, sunt, ullam unde velit voluptate voluptates.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi autem, cumque doloremque, ea earum eos expedita modi molestiae nisi nulla possimus quo sed tenetur ut vel voluptatum. Eum, iure.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eveniet, harum molestias officia quasi rerum sapiente sint ut, veritatis vero voluptas voluptates. Amet fugit modi perferendis perspiciatis quae, repellat ut.
-            </span>
+        <div class="textBox">
+            <div class="btnEdit">
+                <input type="image" src="./img/edit.png">
+            </div>
+            <div>
+                <span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cumque delectus dolor doloribus enim explicabo inventore magni nisi officiis reprehenderit sequi totam, velit, voluptas. Aspernatur beatae facere quisquam quos sit?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, assumenda, dicta error esse ex magni maxime minima natus neque nostrum pariatur rem repudiandae, similique sit tenetur unde ut vel voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci architecto assumenda blanditiis debitis dolor esse ex explicabo, facere molestiae nam omnis, sapiente similique sit vero. Excepturi facere quo recusandae.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quibusdam, voluptates! Ab beatae, cum deserunt distinctio doloribus enim fugit id impedit obcaecati optio quae, sunt, ullam unde velit voluptate voluptates.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi autem, cumque doloremque, ea earum eos expedita modi molestiae nisi nulla possimus quo sed tenetur ut vel voluptatum. Eum, iure.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eveniet, harum molestias officia quasi rerum sapiente sint ut, veritatis vero voluptas voluptates. Amet fugit modi perferendis perspiciatis quae, repellat ut.
+                </span>
+            </div>
         </div>
     </div>
 </body>
