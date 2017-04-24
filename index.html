@@ -3,40 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Mini Text Editor!</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./pub/css/style.css">
+    <script src="./pub/js/script.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <div class="tools">
-            <div class="btnSize">
-                <input type="image" src="./img/textSize.png" alt="Размер шрифта">
+            <div class="font-size">
+                <button class="sprite sprite-font-size" type="button"></button>
             </div>
-            <div class="btnAlign">
-                <input type="image" src="./img/alignLeft.png" alt="По левому краю">
-                <input type="image" src="./img/alignCenter.png" alt="По центру">
-                <input type="image" src="./img/alignRight.png" alt="По правому краю">
-                <input type="image" src="./img/alignJustify.png" alt="По ширине">
+            <div class="btn-align">
+                <button class="sprite sprite-align-left" type="button"></button>
+                <button class="sprite sprite-align-center" type="button"></button>
+                <button class="sprite sprite-align-right" type="button"></button>
+                <button class="sprite sprite-align-justify" type="button"></button>
             </div>
-            <div class="btnBold">
-                <input type="image" src="./img/bold.png">
+            <div class="font-style">
+                <button class="sprite sprite-bold" type="button"></button>
+                <button class="sprite sprite-italic" type="button"></button>
+                <button class="sprite sprite-underline" type="button"></button>
             </div>
-            <div class="btnItalic">
-                <input type="image" src="./img/italic.png">
-            </div>
-            <div class="btnUnderline">
-                <input type="image" src="./img/underline.png">
-            </div>
-            <div class="btnColor">
-                <input type="image" src="./img/fontColor.png">
-            </div>
-            <div class="btnSave">
-                <input type="image" src="./img/save.png">
+            <div>
+                <button class="sprite sprite-font-color" type="button"></button></div>
+            <div class="btn-save">
+                <button class="sprite sprite-save" type="button"></button>
             </div>
         </div>
-        <div class="textBox">
-            <div class="btnEdit">
-                <input type="image" src="./img/edit.png">
+        <div class="textbox">
+            <div class="btn-edit">
+                <button class="sprite sprite-edit" type="button"></button>
             </div>
             <div>
                 <span>
