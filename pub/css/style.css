@@ -117,15 +117,20 @@ body {
     background-position: -208px -126px;
 }
 
+#fontSizeList {
+    z-index: 1;
+    display: none;
+    width: 77px;
+}
+
 #fontSizeList ul {
     list-style: none;
-    width: 25px;
     height: 267px;
     padding: 25px;
     margin-top: 0;
     margin-bottom: 0;
-    /*display: none;*/
     background-color: #ffffff;
+    border: 1px solid #d6d5d5;
     position: absolute;
     top: 0;
     left: 0;
@@ -134,4 +139,9 @@ body {
 #fontSizeList li {
     list-style: none;
     margin-bottom: 10px;
+}
+
+#fontSizeList li:hover {
+    background-color: aliceblue;
+    cursor: pointer;
 }
