@@ -101,8 +101,11 @@ body {
     background-color: #ffffff;
     border: 1px solid #d6d5d5;
     position: absolute;
-    top: 73px;
+    top: 60px; /* 73 */
     left: 0;
+    
+    -webkit-box-shadow: 2px 2px 5px 0 #737373;
+    box-shadow: 2px 2px 5px 0 #737373;
 }
 
 #fontSizeList ul {
@@ -144,10 +147,13 @@ body {
 #colorPicker {
     z-index: 1;
     display: none;
-    top: 73px;
+    top: 60px; /* 73 */
     left: 0;
     margin-left: -317px;
     position: absolute;
+    
+    -webkit-box-shadow: 2px 2px 5px 0 #737373;
+    box-shadow: 2px 2px 5px 0 #737373;
 }
 
 #colorPicker table {
