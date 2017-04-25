@@ -1,5 +1,5 @@
 body {
-    padding: 100px;
+    padding: 50px;
 }
 
 .wrapper {
@@ -16,7 +16,7 @@ body {
     margin-bottom: 10px;
 }
 
-.font-size {
+#fontSize {
     margin-right: 36px;
 }
 
@@ -47,7 +47,7 @@ body {
     position: relative;
     height: 528px;
     border: 1px solid #d6d5d5;
-    font-size: 18px;
+    /*font-size: 18px;*/
     padding: 50px 49px 10px 30px;
 }
 .btn {
@@ -117,3 +117,21 @@ body {
     background-position: -208px -126px;
 }
 
+#fontSizeList ul {
+    list-style: none;
+    width: 25px;
+    height: 267px;
+    padding: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    /*display: none;*/
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#fontSizeList li {
+    list-style: none;
+    margin-bottom: 10px;
+}
