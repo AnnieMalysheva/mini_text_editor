@@ -16,39 +16,8 @@ body {
     margin-bottom: 10px;
 }
 
-#fontSize {
-    margin-right: 36px;
-}
+/*menu icons start*/
 
-.alignment {
-    margin-right: 40px;
-    padding: 0;
-}
-
-.font-style {
-    margin-right: 40px;
-}
-
-.color-palette {
-    margin-left: 30px;
-}
-
-.save {
-    position: absolute;
-    right: 0;
-}
-
-.edit {
-    position: absolute;
-    right: 6px;
-    top: 10px;
-}
-.textbox {
-    position: relative;
-    height: 528px;
-    border: 1px solid #d6d5d5;
-    padding: 30px 49px 10px 30px;
-}
 .btn {
     background-image: url('../img/spritesheet.png');
     background-repeat: no-repeat;
@@ -56,7 +25,7 @@ body {
 
     width: 60px;
     height: 60px;
-    
+
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
@@ -116,6 +85,15 @@ body {
     background-position: -208px -126px;
 }
 
+/*menu icons end*/
+
+/*font size start */
+
+#fontSize {
+    margin-right: 36px;
+    position: relative;
+}
+
 #fontSizeList {
     z-index: 1;
     display: none;
@@ -123,7 +101,7 @@ body {
     background-color: #ffffff;
     border: 1px solid #d6d5d5;
     position: absolute;
-    top: 0;
+    top: 73px;
     left: 0;
 }
 
@@ -145,19 +123,43 @@ body {
     cursor: pointer;
 }
 
-#colorPick table {
+/*font size end*/
+
+.alignment {
+    margin-right: 40px;
+    padding: 0;
+}
+
+.font-style {
+    margin-right: 40px;
+}
+
+/*change color start*/
+
+.color-palette {
+    margin-left: 30px;
+    position: relative;
+}
+
+#colorPicker {
     z-index: 1;
-    /*display: none;*/
+    display: none;
+    top: 73px;
+    left: 0;
+    margin-left: -317px;
+    position: absolute;
+}
+
+#colorPicker table {
     width: 377px;
     height: 168px;
     padding: 45px 30px;
     top: 0;
     background-color: #ffffff;
     border: 1px solid #d6d5d5;
-    position: absolute;
 }
 
-#colorPick td {
+#colorPicker td {
     width: 60px;
     height: 60px;
     border: 1px solid #d6d5d5;
@@ -203,6 +205,26 @@ body {
 .color10 {
     background-color: #e50017;
 }
+
+/*change color end*/
+
+.save {
+    position: absolute;
+    right: 0;
+}
+
+.edit {
+    position: absolute;
+    right: 6px;
+    top: 10px;
+}
+.textbox {
+    position: relative;
+    height: 528px;
+    border: 1px solid #d6d5d5;
+    padding: 30px 49px 10px 30px;
+}
+
 
 
 
