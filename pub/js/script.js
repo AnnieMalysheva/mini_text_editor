@@ -19,10 +19,29 @@ function thisDropdown (event) {
     }
 }
 
-// selection
-var selectedObject = document.getSelection();
-var setAlignLeaft = document.getElementById("btnAlignLeft");
+// alignment section
+var alignmentLeft = document.getElementById('btnAlignLeft');
+var alignmentCenter = document.getElementById('btnAlignCenter');
+var alignmentRight = document.getElementById('btnAlignRight');
+var alignmentJustify = document.getElementById('btnAlignJustify');
 
-setAlignLeaft.addEventListener("click", function () {
-    alert(selectedObject);
-});
+alignmentLeft.addEventListener('click', function () {
+    var targetEl = document.querySelector('p');
+    targetEl.style.textAlign = "left";
+}, false);
+
+alignmentCenter.addEventListener('click', function () {
+    var targetEl = document.querySelector('p');
+    targetEl.style.textAlign = "center";
+}, false);
+
+alignmentRight.addEventListener('click', function () {
+    var targetEl = document.querySelector('p');
+    targetEl.style.textAlign = "right";
+}, false);
+
+alignmentJustify.addEventListener('click', function () {
+    var targetEl = document.querySelector('p');
+    targetEl.style.textAlign = "justify";
+}, false);
+//end of section
