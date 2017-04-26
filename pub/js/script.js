@@ -45,3 +45,36 @@ alignmentJustify.addEventListener('click', function () {
     targetEl.style.textAlign = "justify";
 }, false);
 //end of section
+
+// text style section
+var styleBold = document.getElementById('btnBold');
+var styleItalic = document.getElementById('btnItalic');
+var styleUnderline = document.getElementById('btnUnderline');
+
+styleBold.addEventListener('click', function () {
+    var targetEl = document.querySelector('p');
+    if (targetEl.style.fontWeight !== "bold") {
+        targetEl.style.fontWeight = "bold";
+    } else {
+        targetEl.style.fontWeight = "normal";
+    }
+}, false);
+
+styleItalic.addEventListener('click', function () {
+    var targetEl = document.querySelector('p');
+    if (targetEl.style.fontStyle !== "italic") {
+        targetEl.style.fontStyle = "italic"
+    } else {
+        targetEl.style.fontStyle = "normal";
+    }
+}, false);
+
+styleUnderline.addEventListener('click', function () {
+    var targetEl = document.querySelector('p');
+    if (targetEl.style.textDecoration !== "underline") {
+        targetEl.style.textDecoration = "underline";
+    } else {
+        targetEl.style.textDecoration = "none";
+    }
+}, false);
+//end of section
