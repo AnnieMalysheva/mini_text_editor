@@ -9,7 +9,7 @@
     <meta name="keywords" content='<?echo $keywords_page;?>' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
    
- <!--    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 
@@ -50,6 +50,30 @@
         }
 
 
+        .pack {
+            max-width: 600px;
+        }
+
+        .pack__item {
+            float: left;
+            height: 150px;
+            width: 150px;
+            list-style: none;
+            background-color: gray;
+            box-sizing: border-box;
+            border: 1px solid #fff;
+            cursor: pointer;
+        }
+        .pack__item:hover { 
+           opacity: 0.5;
+        }
+        .pack__item:nth-child(odd){
+            background-color: green;
+        }
+
+
+
+
     </style>
     
 
@@ -63,9 +87,61 @@
 
 </div>
 
+<ul class="pack">
+    <li data-number="01" class="pack__item"></li>
+    <li data-number="02" class="pack__item"></li>
+    <li data-number="03" class="pack__item"></li>
+    <li data-number="04" class="pack__item"></li>
+    <li data-number="05" class="pack__item"></li>
+    <li data-number="06" class="pack__item"></li>
+    <li data-number="07" class="pack__item"></li>
+    <li data-number="08" class="pack__item"></li>
+    <li data-number="09" class="pack__item"></li>
+    <li data-number="10" class="pack__item"></li>
+    <li data-number="11" class="pack__item"></li>
+    <li data-number="12" class="pack__item"></li>
+    <li data-number="13" class="pack__item"></li>
+    <li data-number="14" class="pack__item"></li>
+    <li data-number="15" class="pack__item"></li>
+    <li data-number="16" class="pack__item"></li>
+    <li data-number="17" class="pack__item"></li>
+    <li data-number="18" class="pack__item"></li>
+    <li data-number="19" class="pack__item"></li>
+    <li data-number="20" class="pack__item"></li>
+</ul>
 
 
+<script>
+    'use strict';
 
+    var elements = document.querySelectorAll('.pack .pack__item');
+
+    console.log(elements);
+
+    if(elements){
+        for(var i=0; i < elements.length; i++){
+            elements[i].addEventListener('click', thisEl, false);
+        }
+    }
+
+    function thisEl(event){ 
+
+        var targetEl = event.target;
+
+        console.log('Привет, я элемент № ' + targetEl.getAttribute('data-number'));
+        
+        if(parseFloat(targetEl.getAttribute('data-number')) != 1){
+            console.log('Привет, a я предыдущий элемент и мой № ' + targetEl.previousElementSibling.getAttribute('data-number'));
+        }
+        if(parseFloat(targetEl.getAttribute('data-number')) != 20){
+            console.log('Ну а я следующий элемент № ' + targetEl.nextElementSibling.getAttribute('data-number'));
+        }
+        
+        console.log('\n \n \n');
+
+    }
+
+</script>
 
 
 </body>
