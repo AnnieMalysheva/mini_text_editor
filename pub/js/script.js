@@ -1,6 +1,8 @@
 /**
  * Created by Anna on 24.04.2017.
  */
+
+// dropdown section
 var dropdowns = document.querySelectorAll('[data-type="dropdown"]');
 
 if (dropdowns) {
@@ -18,6 +20,35 @@ function thisDropdown (event) {
         dropElement.style.display = "none";
     }
 }
+// end of section
+
+// font size dropdown section
+var fontSize = document.getElementsByClassName('font-size');
+
+if (fontSize) {
+    for (i = 0; i < fontSize.length; i++) {
+        fontSize[i].addEventListener('click', function changeSize() {
+            var el = document.querySelector('p');
+            el.style.fontSize = this.textContent + 'px';
+        }, false);
+    }
+}
+// end of section
+
+// color change dropdown section
+var fontColor = document.getElementsByClassName('color');
+
+if (fontColor) {
+    for (i = 0; i < fontColor.length; i++) {
+        fontColor[i].addEventListener('click', function changeColor() {
+            var style = window.getComputedStyle(this);
+            var color = style.getPropertyValue('background-color');
+            var el = document.querySelector('p');
+            el.style.color = color;
+        }, false);
+    }
+}
+// end of section
 
 // alignment section
 var alignmentLeft = document.getElementById('btnAlignLeft');
