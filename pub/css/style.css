@@ -223,16 +223,39 @@ body {
     right: 0;
 }
 
-.edit {
-    position: absolute;
+#edit {
+    align-self: flex-end;
     right: 6px;
     top: 10px;
 }
-.textbox {
-    position: relative;
+
+#textbox {
+    display: flex;
+    flex-direction: column;
     height: 528px;
     border: 1px solid #d6d5d5;
-    padding: 30px 49px 10px 30px;
+    padding: 10px;
+}
+
+#textInput {
+    display: none;
+    margin: 0 46px 0 30px;
+    top: 0;
+    border: none;
+}
+
+#textInput textarea {
+    z-index: 1;
+    width: 764px;
+    height: 216px;
+    position: absolute;
+    padding-top: 0;
+    padding-left: 0;
+    line-height: 16px;
+}
+
+.textPlace p {
+    margin: 0 46px 0 30px;
 }
 
 
