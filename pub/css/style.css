@@ -38,6 +38,10 @@ body {
     text-decoration: none;
 }
 
+.alignment span {
+    display: none;
+}
+
 .btn-align-center {
     background-position: -9px -4px;
 }

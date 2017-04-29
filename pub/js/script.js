@@ -51,30 +51,16 @@ if (fontColor) {
 // end of section
 
 // alignment section
-var alignmentLeft = document.getElementById('btnAlignLeft');
-var alignmentCenter = document.getElementById('btnAlignCenter');
-var alignmentRight = document.getElementById('btnAlignRight');
-var alignmentJustify = document.getElementById('btnAlignJustify');
-
-alignmentLeft.addEventListener('click', function () {
-    var targetEl = document.querySelector('p');
-    targetEl.style.textAlign = "left";
-}, false);
-
-alignmentCenter.addEventListener('click', function () {
-    var targetEl = document.querySelector('p');
-    targetEl.style.textAlign = "center";
-}, false);
-
-alignmentRight.addEventListener('click', function () {
-    var targetEl = document.querySelector('p');
-    targetEl.style.textAlign = "right";
-}, false);
-
-alignmentJustify.addEventListener('click', function () {
-    var targetEl = document.querySelector('p');
-    targetEl.style.textAlign = "justify";
-}, false);
+var alignmentList = document.getElementsByClassName('align');
+console.log(alignmentList);
+if (alignmentList) {
+    for (i = 0; i < alignmentList.length; i++) {
+        alignmentList[i].addEventListener('click', function () {
+            var targetEl = document.querySelector('p');
+            targetEl.style.textAlign = this.textContent;
+        }, false)
+    }
+}
 //end of section
 
 // text style section
