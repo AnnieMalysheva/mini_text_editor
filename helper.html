@@ -112,11 +112,25 @@
 
 
 <script>
+
     'use strict';
+
+
+
+    var user = {
+  		name: "Вася",
+  		hi: function() { alert(this.name); },
+  		bye: function() { alert("Пока"); }
+	};
+
+		user.hi(); // Вася (простой вызов работает)
+
+		// а теперь вызовем user.hi или user.bye в зависимости от имени
+		user.name == "Вася" ? user.hi() : user.bye(); // undefined
 
     var elements = document.querySelectorAll('.pack .pack__item');
 
-    console.log(elements);
+    // console.log(elements);
 
     if(elements){
         for(var i=0; i < elements.length; i++){
@@ -128,7 +142,7 @@
 
         var targetEl = event.target;
 
-        console.log('Привет, я элемент № ' + targetEl.getAttribute('data-number'));
+        // console.log('Привет, я элемент № ' + targetEl.getAttribute('data-number'));
         
         if(parseFloat(targetEl.getAttribute('data-number')) != 1){
             console.log('Привет, a я предыдущий элемент и мой № ' + targetEl.previousElementSibling.getAttribute('data-number'));
@@ -137,7 +151,7 @@
             console.log('Ну а я следующий элемент № ' + targetEl.nextElementSibling.getAttribute('data-number'));
         }
         
-        console.log('\n \n \n');
+        // console.log('\n \n \n');
 
     }
 
