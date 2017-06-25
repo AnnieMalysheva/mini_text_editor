@@ -2,6 +2,8 @@
  * Created by Anna on 24.04.2017.
  */
 
+'use strict';
+
 // dropdown section
 var dropdowns = document.querySelectorAll('[data-type="dropdown"]');
 
@@ -27,12 +29,19 @@ var fontSize = document.getElementsByClassName('font-size');
 
 if (fontSize) {
     for (i = 0; i < fontSize.length; i++) {
-        fontSize[i].addEventListener('click', function changeSize() {
-            var el = document.querySelector('p');
-            el.style.fontSize = this.textContent + 'px';
-        }, false);
+        fontSize[i].addEventListener('click', changeSize , false);
     }
 }
+
+
+function changeSize() {
+            var el = document.querySelector('p');
+            console.log(this);
+            el.style.fontSize = this.textContent + 'px';
+        }
+
+
+
 // end of section
 
 // color change dropdown section
